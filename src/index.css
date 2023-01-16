@@ -281,7 +281,7 @@ header.header {
   font-family: 'Cabin', sans-serif;
   font-size: 14px;
   line-height: 12px;
-  min-width: 342px;
+  width: 342px;
   height: 48px;
   padding: 0px 25px;
   color: white;
@@ -292,15 +292,7 @@ header.header {
 #email::placeholder {
   color: white;
 }
-/* 
-#email:focus {
-  border: 1.5px solid #2C3539;
-  color: #2C3539;
-}
 
-#email:focus::placeholder {
-  color: #2C3539;
-} */
 
 #email.inputError {
   border: 1.5px solid red;
@@ -376,7 +368,7 @@ header.header {
 
   #email {
     margin: auto;
-    width: 100%;
+    width: 80%;
   }
 
   #subscribeButton {
