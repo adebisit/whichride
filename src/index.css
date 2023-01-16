@@ -46,7 +46,7 @@ header.header {
   align-items: center;
 }
 
-#expandMenu {
+#showMenu, #hideMenu {
   padding: 5px;
   background: none;
   border: none;
@@ -71,7 +71,8 @@ header.header {
   align-items: center;
 }
 
-.navbar {
+
+.navbar ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -335,35 +336,48 @@ header.header {
 }
 
 @media only screen and (max-width: 600px) {
-  #expandMenu {
+  #showMenu, #hideMenu {
     display: block;
   }
 
-  .navbar {
+  #hideMenu {
     position: absolute;
-    background-color: #2C3539;
-    width: 150px;
-    padding: 1rem;
-    right: 5%;
-    border-radius: 5px;
-    height: 0;
+    top: 10px;
+    right: 1rem;    
   }
 
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    /* background-color: #9B51E0; */
+    background-color:  #a867e4;
+    padding: 4rem 2rem;
+  }
+
+  .navbar ul {
+    display: block;
+  }
   .navbar.show {
-    height: 150px;
-    display: block;  
+    display: block;
+    width: 50%;
+    transition: width 1s ease-in-out;
   }
 
   .navbar.hide {
     display: none;
+    width: 0px;
   }
 
   .navbar .navbarItem {
-    padding: 10px 10px;  
+    padding: 1rem 0;
   }
 
-  .navbar .navbarItem:hover {
-    opacity: 0.5; 
+  .navbar .navbarItem:hover a {
+    opacity: 0.8;
+    color: black;
   }
 
   .navbar .navbarItem a {
