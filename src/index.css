@@ -49,7 +49,9 @@ header.header {
   align-items: center;
   justify-content: space-between;
   background-color: #DEB63D;
-  padding: 8px 10%;
+  color: white;
+  height: 73px;
+  padding: 0 10%;
   font-size: 11px;
 }
 
@@ -91,10 +93,12 @@ header.header {
 .heroTitle {
   font-size: 48px;
   margin-bottom: 25px;
+  max-width: 450px;
 }
 
 .heroSubtitle {
   font-size: 15px;
+  max-width: 450px;
 }
 
 /* main section {
@@ -183,6 +187,7 @@ header.header {
 
 .instructionItem .subtitle {
   font-size: 13px;
+  max-width: 379px;
 }
 
 
@@ -230,6 +235,7 @@ header.header {
 
 .signUpPageContainer .subtitle {
   margin-bottom: 20px;
+  max-width: 495px;
 }
 
 .formControl {
@@ -245,8 +251,9 @@ header.header {
   font-family: 'Cabin', sans-serif;
   font-size: 14px;
   line-height: 12px;
-  width: 350px;
-  padding: 8px 25px;
+  min-width: 342px;
+  height: 48px;
+  padding: 0px 25px;
   color: white;
   outline: none;
   margin-right: 10px;
@@ -264,9 +271,10 @@ header.header {
   color: white;
   border: none;
   font-family: 'Cabin', sans-serif;
-  padding: 11px 25px;
+  padding: 0px 25px;
   /* min-height: 43px; */
-  width: 150px;
+  width: 157px;
+  height: 48px;
   cursor: pointer;
 }
 

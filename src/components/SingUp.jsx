@@ -2,6 +2,10 @@ import { useState } from "react"
 
 function SingUp() {
     const [email, setEmail] = useState('')
+    const onSubmit = (e) => {
+        e.preventDefault()
+        alert('Subscribed')
+    }
 
     return (
         <>

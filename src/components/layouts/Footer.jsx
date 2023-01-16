@@ -5,10 +5,10 @@ function Footer() {
         © 2020 Whichride - All rights reserved.
         </p>
         <div>
-            <a href="/" style={{marginRight: '20px'}}>
+            <a href="/" style={{marginRight: '20px', color: 'white'}}>
                 Privacy Policy
             </a>
-            <a href="/">
+            <a href="/" style={{ color: 'white' }}>
                 Terms and Conditions
             </a>
         </div>

@@ -29,7 +29,7 @@ function HowTo() {
                     </div>
                 </li>
                 <li className="instructionItem" style={{ padding: '15px 0px'}}>
-                    <div>Step 2</div>
+                    <div>Step 3</div>
                     <div>
                         <p className="title">Pay and Save</p>
                         <p className="subtitle">Once you select a ride, we search the web for coupons to get you an even better deal, then book seemlessly within our app and earn points while you ride.</p>
