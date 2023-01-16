@@ -77,7 +77,7 @@ header.header {
 }
 
 .heroCaption {
-  margin-right: auto;
+  margin: auto;
   padding-bottom: 20px;
 }
 
@@ -238,6 +238,12 @@ header.header {
   }
 
   .hero .heroImage {
+    width: 100%;
+  }
+
+  .sectionWrapper {
+    padding: 50px;
+    height: 100%;
     width: 100%;
   }
 }
