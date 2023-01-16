@@ -1,4 +1,4 @@
-import { useRef, useState } from "react"
+import { useState } from "react"
 
 function SingUp() {
     const [email, setEmail] = useState('')

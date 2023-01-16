@@ -46,6 +46,15 @@ header.header {
   align-items: center;
 }
 
+#expandMenu {
+  padding: 5px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+
 .footer {
   display: flex;
   align-items: center;
@@ -326,6 +335,41 @@ header.header {
 }
 
 @media only screen and (max-width: 600px) {
+  #expandMenu {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    background-color: #2C3539;
+    width: 150px;
+    padding: 1rem;
+    right: 5%;
+    border-radius: 5px;
+    height: 0;
+  }
+
+  .navbar.show {
+    height: 150px;
+    display: block;  
+  }
+
+  .navbar.hide {
+    display: none;
+  }
+
+  .navbar .navbarItem {
+    padding: 10px 10px;  
+  }
+
+  .navbar .navbarItem:hover {
+    opacity: 0.5; 
+  }
+
+  .navbar .navbarItem a {
+    color: white;
+  }
+
   .formControl {
     display: block;
   }
