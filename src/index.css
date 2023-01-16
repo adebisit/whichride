@@ -100,13 +100,13 @@ header.header {
 } */
 
 .pageTitle {
-  font-size: 35px;
+  font-size: 30px;
   margin: 0;
   margin-bottom: 30px;
 }
 
 .pageSubtitle {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .sectionWrapper {
@@ -127,6 +127,23 @@ header.header {
 
 .sectionWrapper:has( > .page4) {
   background-color: #F2C94C;
+}
+
+.howToWrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.instructionListContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 750px;
+  margin: auto;
+}
+
+.instructionListContainer img {
+  height: '500px';
 }
 
 .instructionList {
@@ -157,12 +174,12 @@ header.header {
 }
 
 .instructionItem .title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bolder;
 }
 
 .instructionItem .subtitle {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .page3 .cards {
@@ -242,8 +259,20 @@ header.header {
   }
 
   .sectionWrapper {
-    padding: 50px;
-    height: 100%;
+    padding: 80px 50px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .sectionWrapper {
+    padding: 80px 50px;
+  }
+
+  .howToWrapper {
     width: 100%;
+  }
+
+  .instructionListContainer {
+    display: block;
   }
 }
