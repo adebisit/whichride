@@ -6,7 +6,7 @@ import fastClockSvg from "../assets/mdi_clock-fast.svg"
 function WhyUs() {
   return (
     <div className="" style={{padding: '80px', position: 'relative'}}>
-        <div style={{
+        {/* <div style={{
             position: "absolute",
             width: '50%',
             height: '100%',
@@ -14,7 +14,7 @@ function WhyUs() {
             top: '0',
             left: '0',
             zIndex: '-1',
-        }}></div>
+        }}></div> */}
         <div className="textCenter">
             <h1 className="pageTitle">Why Whichride</h1>
         </div>
