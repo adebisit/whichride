@@ -2,7 +2,7 @@ function Header() {
     return (
         <header className="header">
             <div className="companyLogo">
-                <img src="./logo.svg" width="175px" alt="which-ride"/>
+                <img src="./logo.svg" width="150px" alt="which-ride"/>
             </div>
             <ul className="navbar">
                 <li className="navbarItem">

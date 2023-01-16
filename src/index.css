@@ -4,6 +4,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -35,7 +37,7 @@ a {
 
 
 header.header {
-  width: 85%;
+  width: 90%;
   margin: 43px auto;
   display: flex;
   justify-content: space-between;
@@ -60,27 +62,36 @@ header.header {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  width: 300px;
+  width: 250px;
   font-weight: 600;
 }
 
 .hero {
+  min-width: 85%;
+  max-width: 90%;
+  margin: auto;
   margin: auto;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
 }
 
 .heroCaption {
-  margin-right: 30px;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.hero .heroImage {
+  width: 50%;
 }
 
 .heroTitle {
-  font-size: 55px;
+  font-size: 48px;
+  margin-bottom: 25px;
 }
 
 .heroSubtitle {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 /* main section {
@@ -218,4 +229,15 @@ header.header {
   padding: 10px 25px;
   min-height: 43px;
   width: 150px;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .hero {
+    display: block;    
+  }
+
+  .hero .heroImage {
+    width: 100%;
+  }
 }

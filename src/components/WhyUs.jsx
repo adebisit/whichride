@@ -5,7 +5,7 @@ import fastClockSvg from "../assets/mdi_clock-fast.svg"
 
 function WhyUs() {
   return (
-    <div className="" style={{padding: '80px'}}>
+    <div className="" style={{padding: '80px', position: 'relative'}}>
         <div style={{
             position: "absolute",
             width: '50%',
