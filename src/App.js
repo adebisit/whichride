@@ -8,7 +8,7 @@ import SingUp from "./components/SingUp";
 
 function App() {
     return (
-        <div>
+        <>
             <Header />
             <main>
                 <section className="hero">
@@ -29,7 +29,7 @@ function App() {
                 </div>
             </main>
             <Footer />
-        </div>
+        </>
     );
 }
 
