@@ -5,14 +5,12 @@ function SingUp() {
 
     return (
         <>
-            <div style={{width: '75%', margin: 'auto'}}>
-                <div className="textCenter" style={{ padding: '0 180px' }}>
-                    <h1 className="pageTitle">
-                    Sign up to our beta form
-                    </h1>
+            <div className="signUpPageContainer" style={{maxWidth: '400px', margin: 'auto'}}>
+                <div className="textCenter">
+                    <h1 className="title">Sign up to our beta form</h1>
                 </div>
-                <div className="textCenter" style={{ padding: '0 270px' }}>
-                    <p className="pageSubtitle">
+                <div className="textCenter" style={{marginBottom: '20px'}}>
+                    <p className="subtitle">
                         Sign up to our mailing list to find out more information and keep up to date about our activities
                     </p>
                 </div>

@@ -66,6 +66,9 @@ header.header {
   font-weight: 600;
 }
 
+.navbar .navbarItem {
+  font-size: 14px;
+}
 .hero {
   min-width: 85%;
   max-width: 90%;
@@ -221,6 +224,14 @@ header.header {
   font-size: 15px;
 }
 
+.signUpPageContainer .title {
+  margin-bottom: 30px;
+}
+
+.signUpPageContainer .subtitle {
+  margin-bottom: 20px;
+}
+
 .formControl {
   display: flex;
   align-items: center;
@@ -228,19 +239,16 @@ header.header {
 }
 
 #email {
-  border: 2px solid #FFFFFF;
-  /* background: linear-gradient(0deg, rgba(196, 196, 196, 0), rgba(196, 196, 196, 0)), linear-gradient(0deg, #FFFFFF, #FFFFFF); */
+  border: 1.5px solid #FFFFFF;
   background-color: transparent;
   /* font-family: Brown; */
   font-family: 'Cabin', sans-serif;
   font-size: 14px;
   line-height: 12px;
-  /* text-align: center; */
-  width: 342px;
-  padding: 0 25px;
+  width: 350px;
+  padding: 8px 25px;
   color: white;
   outline: none;
-  height: 45px;
   margin-right: 10px;
 }
 
@@ -252,15 +260,33 @@ header.header {
   background-color: #2C3539;
   outline: none;
   font-size: 12px;
+  letter-spacing: 1px;
   color: white;
   border: none;
   font-family: 'Cabin', sans-serif;
-  padding: 10px 25px;
-  min-height: 43px;
+  padding: 11px 25px;
+  /* min-height: 43px; */
   width: 150px;
+  cursor: pointer;
 }
 
 
+@media only screen and (max-width: 600px) {
+  .formControl {
+    display: block;
+  }
+
+  #email {
+    margin: auto;
+    width: 100%;
+  }
+
+  #subscribeButton {
+    display: block;
+    margin-top: 10px;
+    margin: 10px auto;
+  }
+}
 @media only screen and (max-width: 700px) {
   .hero {
     display: block;    
