@@ -2,7 +2,7 @@ import { useState } from "react"
 
 function SingUp() {
     const [email, setEmail] = useState('')
-    const onSubmit = (e) => {
+    const subscribe = (e) => {
         e.preventDefault()
         alert('Subscribed')
     }
@@ -18,7 +18,7 @@ function SingUp() {
                         Sign up to our mailing list to find out more information and keep up to date about our activities
                     </p>
                 </div>
-                <form onSubmit={(e) => e.preventDefault()}>
+                <form onSubmit={subscribe}>
                     <div className="formControl">
                         <input
                             id="email"
