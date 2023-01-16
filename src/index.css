@@ -182,13 +182,25 @@ header.header {
   font-size: 13px;
 }
 
-.page3 .cards {
+
+/* Cards in Page 3 */
+/* .page3 .cards {
   display: flex;
   justify-content: space-around;
+} */
+
+.page3 .cards {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  max-width: 800px;
+  margin: auto;
 }
 
+
+
 .page3 .cards .card {
-  width: 300px;
+  width: 250px;
 }
 
 .page3 .card .svgContainer {
@@ -260,6 +272,20 @@ header.header {
 
   .sectionWrapper {
     padding: 80px 50px;
+  }
+
+  .page3 .cards {
+    display: block;
+  }
+
+  .page3 .cards .svgContainer {
+    margin: auto;
+  }
+
+  .page3 .cards .card {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
   }
 }
 
