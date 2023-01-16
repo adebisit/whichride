@@ -1,6 +1,6 @@
 function HowTo() {
   return (
-    <div class="howToWrapper">
+    <div className="howToWrapper">
         <div className="textCenter" style={{ maxWidth: '500px', margin: 'auto', paddingBottom: '30px'}}>
             <h1 className="pageTitle textCenter">
                 Whichride brings together multiple ride hailing providers and local taxi firms in one app

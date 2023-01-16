@@ -157,6 +157,8 @@ header.header {
 
 .instructionList {
   list-style: none;
+  max-width: 350px;
+  margin: auto;
 }
 
 .instructionItem {
@@ -180,11 +182,22 @@ header.header {
   align-items: center;
   justify-content: center;
   margin-right: 3em;
+  cursor: pointer;
+}
+
+.instructionItem > div:first-child:hover {
+  background-color: rgba(242, 201, 76, 0.75);
+  /* opacity: 0.7; */
+  min-width: 65px;
+  min-height: 65px;
+  color: white;
+  transition-duration: 0.25s;
 }
 
 .instructionItem .title {
   font-size: 18px;
   font-weight: bolder;
+  margin-bottom: 10px;
 }
 
 .instructionItem .subtitle {
@@ -198,6 +211,12 @@ header.header {
   display: flex;
   justify-content: space-around;
 } */
+
+.whyHowWrapper {
+  padding: 80px;
+  position: relative;
+  padding-bottom: 239px;
+}
 
 .page3 .cards {
   display: grid;
@@ -264,6 +283,25 @@ header.header {
 #email::placeholder {
   color: white;
 }
+/* 
+#email:focus {
+  border: 1.5px solid #2C3539;
+  color: #2C3539;
+}
+
+#email:focus::placeholder {
+  color: #2C3539;
+} */
+
+#email.inputError {
+  border: 1.5px solid red;
+  color: red;
+  transition: ease-in 0.5s;
+}
+
+#email.inputError::placeholder {
+  color: red;
+}
 
 #subscribeButton {
   background-color: #2C3539;
@@ -278,8 +316,14 @@ header.header {
   width: 157px;
   height: 48px;
   cursor: pointer;
+  transition: .25s;
 }
 
+#subscribeButton:hover {
+  background-color: rgba(44, 53, 57, 0.5);
+  transition: .25s;
+  border-radius: 0.5rem;
+}
 
 @media only screen and (max-width: 600px) {
   .formControl {
@@ -295,6 +339,18 @@ header.header {
     display: block;
     margin-top: 10px;
     margin: 10px auto;
+  }
+
+
+  #email {
+    font-size: 14px;
+    line-height: 12px;
+    width: 100%;
+    height: 48px;
+    padding: 0px 25px;
+    color: white;
+    outline: none;
+    margin-right: 10px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -326,6 +382,14 @@ header.header {
 }
 
 @media only screen and (max-width: 800px) {
+  .heroTitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .heroSubtitle {
+    font-size: 12px;
+  }
   .sectionWrapper {
     padding: 80px 50px;
   }
@@ -336,5 +400,9 @@ header.header {
 
   .instructionListContainer {
     display: block;
+  }
+
+  .whyHowWrapper {
+    padding-bottom: 100px;
   }
 }

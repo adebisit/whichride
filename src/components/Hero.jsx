@@ -7,7 +7,7 @@ function Hero() {
                     <p className="heroSubtitle">Save money and time with Whichride.<br />Think Compare the market but for taxis.</p>
                 </div>
                 {/* <div className="heroImage"> */}
-                <img class="heroImage" src="./heroImage.png" alt="heroImage"/>
+                <img className="heroImage" src="./heroImage.png" alt="heroImage"/>
                 {/* </div> */}
             </div>
         </>

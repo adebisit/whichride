@@ -1,10 +1,23 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
 
 function SingUp() {
     const [email, setEmail] = useState('')
+    const [isEmailValid, setIsEmailValid] = useState(true)
+
+    const onChange = (e) => {
+        setEmail(e.target.value)
+        setIsEmailValid(true)
+    }
+
     const subscribe = (e) => {
         e.preventDefault()
-        alert('Subscribed')
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        const emailValid = email.match(validRegex) !== null
+        setIsEmailValid(emailValid)
+        if (emailValid) {
+            alert('Subscribed')
+            setEmail("")
+        }
     }
 
     return (
@@ -24,9 +37,10 @@ function SingUp() {
                             id="email"
                             name="email"
                             type='text'
+                            className={isEmailValid === true ? '' : 'inputError' }
                             value={email}
                             placeholder='email'
-                            onChange={e => setEmail(e.target.value)}
+                            onChange={onChange}
                         />
                         <button
                             id="subscribeButton"

@@ -5,7 +5,7 @@ import fastClockSvg from "../assets/mdi_clock-fast.svg"
 
 function WhyUs() {
   return (
-    <div className="" style={{padding: '80px', position: 'relative', paddingBottom: '239px'}}>
+    <div className="whyHowWrapper">
         <div style={{
             position: "absolute",
             width: '50%',
